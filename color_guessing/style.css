@@ -45,3 +45,34 @@ body {
     /*border-radius: 5px;*/
 }
 
+/*para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    #colorSquare {
+        width: 70vw;
+        height: 70vw;
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    #options {
+        width: 80%;
+    }
+
+    .option {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    #colorSquare {
+        width: 90vw;
+        height: 90vw;
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .option {
+        flex: 1 1 100%;
+        margin: 10px ;
+    }
+}
